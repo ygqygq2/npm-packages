@@ -1,7 +1,7 @@
 {
-  "name": "vscode-log",
+  "name": "@ygqygq2/vscode-log",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A logging utility for Visual Studio Code",
   "keywords": [
     "vscode",

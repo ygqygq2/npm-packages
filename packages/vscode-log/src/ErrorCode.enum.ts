@@ -1,6 +1,6 @@
 export enum ErrorCode {
-  // 其他错误 (800 - 999)
-  OpenDocumentFail = 800,
-  GetCustomConfigFail = 801,
-  UnknownError = 802,
+  // 其他错误 (900 - 910)
+  OpenDocumentFail = 900,
+  GetCustomConfigFail = 901,
+  UnknownError = 902,
 }
