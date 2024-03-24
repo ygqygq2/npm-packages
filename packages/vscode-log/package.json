@@ -1,7 +1,7 @@
 {
   "name": "vscode-log",
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A logging utility for Visual Studio Code",
   "keywords": [
     "vscode",
@@ -18,7 +18,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "dev": "npm run build -- --watch"
+    "dev": "npm run build -- --watch",
+    "test": "echo test"
   },
   "devDependencies": {
     "@types/vscode": "^1.87.0"
