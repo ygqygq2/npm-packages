@@ -1,0 +1,36 @@
+{
+  "name": "npm-packages",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "changeset": "^0.2.6",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "simple-git-hooks": "^2.11.0",
+    "tsup": "^8.0.2",
+    "turbo": "^1.13.0"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged",
+    "preserveUnused": true
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "pnpm run lint",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
+  }
+}
