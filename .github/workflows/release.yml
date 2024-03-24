@@ -11,12 +11,7 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
-      packages: write
-      pull-requests: write
-      issues: read
+    # permissions 需要在仓库 settings -> Actions -> Workflows permissions 中设置
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -35,7 +30,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm release
+          publish: pnpm publish-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
