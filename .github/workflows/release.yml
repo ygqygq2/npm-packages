@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -26,6 +27,13 @@ jobs:
           npm install -g pnpm
           pnpm install --ignore-scripts
 
+      - name: Build Docs
+        run: |
+          # 生成到一个 docs 目录下
+          pnpm run docs
+          # 各自生成到各自 docs 目录下
+          pnpm run docs-all
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
@@ -35,6 +43,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # - name: Send a Slack notification if a publish happens
-      #   if: steps.changesets.outputs.published == 'true'
-      #   run: echo "A new version of ${GITHUB_REPOSITORY} was published!"
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

@@ -20,7 +20,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "npm run build -- --watch",
     "test": "echo test",
-    "docs": "typedoc"
+    "docs": "typedoc --options typedoc.json"
   },
   "devDependencies": {
     "@types/vscode": "^1.87.0"

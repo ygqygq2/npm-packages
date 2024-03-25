@@ -1,0 +1,7 @@
+{
+  "entryPoints": ["packages/*"],
+  "name": "ygqygq2's npm packages",
+  "entryPointStrategy": "packages",
+  "includeVersion": false,
+  "plugin": ["typedoc-plugin-missing-exports"]
+}

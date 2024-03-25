@@ -13,7 +13,7 @@ packages.forEach((packageDir: string) => {
 
   if (fs.existsSync("typedoc.json")) {
     console.log(`Generating docs for ${packageDir}...`);
-    const result = shell.exec("npx typedoc --out ./docs ./src", { silent: false });
+    const result = shell.exec("pnpm run docs", { silent: false });
 
     if (result.code !== 0) {
       console.error(`Error generating docs for ${packageDir}:`);
