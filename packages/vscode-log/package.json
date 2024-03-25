@@ -19,7 +19,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "npm run build -- --watch",
-    "test": "echo test"
+    "test": "echo test",
+    "docs": "typedoc"
   },
   "devDependencies": {
     "@types/vscode": "^1.87.0"

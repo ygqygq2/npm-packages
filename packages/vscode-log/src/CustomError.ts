@@ -1,6 +1,9 @@
 import { ErrorCode } from "./ErrorCode.enum";
 import { formatLog } from "./formatLog";
 
+/**
+ * Custom Error
+ */
 export class CustomError extends Error {
   static errorCodeMessages: { [key in ErrorCode]?: string } = {};
   public code: ErrorCode;
@@ -23,6 +26,10 @@ export class CustomError extends Error {
     this.originalError = errorObj;
   }
 
+  /**
+   * configure error code messages
+   * @param errorCodeMessages error code messages object
+   */
   static configure(errorCodeMessages: { [key in ErrorCode]?: string }): void {
     CustomError.errorCodeMessages = errorCodeMessages;
   }

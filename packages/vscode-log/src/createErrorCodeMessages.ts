@@ -1,6 +1,13 @@
 import { ErrorCode } from "./ErrorCode.enum";
 import { ErrorCodeMessage } from "./types";
 
+/**
+ * create error code messages
+ * @param userEnum additional error code enum
+ * @param customMessages custom error messages
+ * @param extensionPrefix extension prefix
+ * @returns error code messages object
+ */
 export function createErrorCodeMessages(
   userEnum: { [key: string]: any },
   customMessages: ErrorCodeMessage,
