@@ -1,0 +1,7 @@
+baseURL: https://npm-packages.ygqygq2.github.io/
+languageCode: en-us
+params:
+  contact:
+    email: ygqygq2@qq.com
+  subtitle: ygqygq2's npm packages
+title: 老杨的网站
