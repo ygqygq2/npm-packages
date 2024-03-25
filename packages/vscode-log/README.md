@@ -53,7 +53,7 @@ logger.handleError(new CustomError(errorCodeEnum.GitNotInit, error));
 logger.throw(new CustomError(errorCodeEnum.GitNotInit, error));
 ```
 
-5. View the logged messages in the Visual Studio Code output panel. Open the output panel by going to `View -> Output` or by pressing `Ctrl+Shift+U`.
+4. View the logged messages in the Visual Studio Code output panel. Open the output panel by going to `View -> Output` or by pressing `Ctrl+Shift+U`.
 
 For more information on the available methods and options, please refer to the [API documentation](https://github.com/ygqygq2/npm-packages/tree/main/packages/vscode-log/docs).
 
