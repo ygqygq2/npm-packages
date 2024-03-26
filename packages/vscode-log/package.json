@@ -1,0 +1,28 @@
+{
+  "name": "@ygqygq2/vscode-log",
+  "private": false,
+  "version": "0.0.3",
+  "description": "A logging utility for Visual Studio Code",
+  "keywords": [
+    "vscode",
+    "log",
+    "utility"
+  ],
+  "author": "ygqygq2 <ygqygq2@qq.com>",
+  "license": "MIT",
+  "repository": "https://github.com/ygqygq2/npm-packages",
+  "bugs": "https://github.com/ygqygq2/npm-packages/issues",
+  "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/vscode-log",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch",
+    "test": "echo test",
+    "docs": "typedoc --options typedoc.json"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0"
+  }
+}

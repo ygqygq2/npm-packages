@@ -1,0 +1,50 @@
+{
+  "name": "npm-packages",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "echo test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "docs": "typedoc",
+    "docs-all": "npm run docs --workspaces --if-present",
+    "docs:script": "ts-node generate-docs.ts",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/shelljs": "^0.8.15",
+    "@ygqygq2/eslint-config": "workspace:*",
+    "@ygqygq2/typescript-config": "workspace:*",
+    "changeset": "^0.2.6",
+    "glob": "^10.3.10",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "shelljs": "^0.8.5",
+    "simple-git-hooks": "^2.11.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.0.2",
+    "turbo": "^1.13.0",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "4.0.0-next.54",
+    "typedoc-plugin-missing-exports": "^2.2.0"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged",
+    "preserveUnused": true
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "pnpm run lint",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
+  }
+}
