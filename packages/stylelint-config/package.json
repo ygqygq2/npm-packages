@@ -2,12 +2,15 @@
   "name": "@ygqygq2/stylelint-config",
   "version": "0.0.0",
   "main": "index.js",
+  "repository": "https://github.com/ygqygq2/npm-packages",
+  "bugs": "https://github.com/ygqygq2/npm-packages/issues",
+  "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/stylelint-config",
   "dependencies": {
-    "stylelint": "^15.10.3",
-    "stylelint-config-css-modules": "^4.3.0",
-    "stylelint-config-recess-order": "^4.3.0",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-prettier": "^4.0.2"
+    "stylelint": "^16.3.0",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^5.0.0"
   },
   "devDependencies": {
     "@ygqygq2/eslint-config": "workspace:*"
