@@ -1,8 +1,8 @@
-**@ygqygq2/vscode-log v0.0.2** • [Readme](../README.md) \| [API](../globals.md)
+**@ygqygq2/vscode-log v0.0.3** • [Readme](../README.md) \| [API](../globals.md)
 
 ***
 
-[@ygqygq2/vscode-log v0.0.2](../README.md) / createErrorCodeMessages
+[@ygqygq2/vscode-log v0.0.3](../README.md) / createErrorCodeMessages
 
 # Function: createErrorCodeMessages()
 
@@ -40,4 +40,4 @@ error code messages object
 
 ## Source
 
-[packages/vscode-log/src/createErrorCodeMessages.ts:11](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/createErrorCodeMessages.ts#L11)
+[packages/vscode-log/src/createErrorCodeMessages.ts:11](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/createErrorCodeMessages.ts#L11)

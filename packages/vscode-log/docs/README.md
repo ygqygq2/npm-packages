@@ -1,4 +1,4 @@
-**@ygqygq2/vscode-log v0.0.2** • Readme \| [API](globals.md)
+**@ygqygq2/vscode-log v0.0.3** • Readme \| [API](globals.md)
 
 ***
 

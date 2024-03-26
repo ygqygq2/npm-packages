@@ -1,8 +1,8 @@
-**@ygqygq2/vscode-log v0.0.2** • [Readme](../README.md) \| [API](../globals.md)
+**@ygqygq2/vscode-log v0.0.3** • [Readme](../README.md) \| [API](../globals.md)
 
 ***
 
-[@ygqygq2/vscode-log v0.0.2](../README.md) / \<internal\>
+[@ygqygq2/vscode-log v0.0.3](../README.md) / \<internal\>
 
 # \<internal\>
 

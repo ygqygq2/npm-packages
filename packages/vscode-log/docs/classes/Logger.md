@@ -1,8 +1,8 @@
-**@ygqygq2/vscode-log v0.0.2** • [Readme](../README.md) \| [API](../globals.md)
+**@ygqygq2/vscode-log v0.0.3** • [Readme](../README.md) \| [API](../globals.md)
 
 ***
 
-[@ygqygq2/vscode-log v0.0.2](../README.md) / Logger
+[@ygqygq2/vscode-log v0.0.3](../README.md) / Logger
 
 # Class: Logger
 
@@ -20,7 +20,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:12](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L12)
+[packages/vscode-log/src/Logger.ts:12](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L12)
 
 ## Properties
 
@@ -38,7 +38,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:41](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L41)
+[packages/vscode-log/src/Logger.ts:41](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L41)
 
 ***
 
@@ -56,7 +56,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:44](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L44)
+[packages/vscode-log/src/Logger.ts:44](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L44)
 
 ***
 
@@ -74,7 +74,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:42](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L42)
+[packages/vscode-log/src/Logger.ts:42](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L42)
 
 ***
 
@@ -92,7 +92,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:40](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L40)
+[packages/vscode-log/src/Logger.ts:40](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L40)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:43](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L43)
+[packages/vscode-log/src/Logger.ts:43](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L43)
 
 ***
 
@@ -120,7 +120,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:11](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L11)
+[packages/vscode-log/src/Logger.ts:11](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L11)
 
 ***
 
@@ -130,7 +130,7 @@
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:10](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L10)
+[packages/vscode-log/src/Logger.ts:10](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L10)
 
 ## Methods
 
@@ -152,7 +152,7 @@ custom error
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:59](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L59)
+[packages/vscode-log/src/Logger.ts:59](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L59)
 
 ***
 
@@ -174,7 +174,7 @@ custom error
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:50](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L50)
+[packages/vscode-log/src/Logger.ts:50](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L50)
 
 ***
 
@@ -202,7 +202,7 @@ vscode output channel title
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:21](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L21)
+[packages/vscode-log/src/Logger.ts:21](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L21)
 
 ***
 
@@ -229,7 +229,7 @@ vscode output channel title
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:34](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L34)
+[packages/vscode-log/src/Logger.ts:34](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L34)
 
 ***
 
@@ -243,4 +243,4 @@ vscode output channel title
 
 #### Source
 
-[packages/vscode-log/src/Logger.ts:30](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/Logger.ts#L30)
+[packages/vscode-log/src/Logger.ts:30](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L30)

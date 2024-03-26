@@ -1,8 +1,8 @@
-**@ygqygq2/vscode-log v0.0.2** • [Readme](README.md) \| API
+**@ygqygq2/vscode-log v0.0.3** • [Readme](README.md) \| API
 
 ***
 
-# @ygqygq2/vscode-log v0.0.2
+# @ygqygq2/vscode-log v0.0.3
 
 ## Modules
 

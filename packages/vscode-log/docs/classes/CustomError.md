@@ -1,8 +1,8 @@
-**@ygqygq2/vscode-log v0.0.2** • [Readme](../README.md) \| [API](../globals.md)
+**@ygqygq2/vscode-log v0.0.3** • [Readme](../README.md) \| [API](../globals.md)
 
 ***
 
-[@ygqygq2/vscode-log v0.0.2](../README.md) / CustomError
+[@ygqygq2/vscode-log v0.0.3](../README.md) / CustomError
 
 # Class: CustomError
 
@@ -34,7 +34,7 @@ Custom Error
 
 #### Source
 
-[packages/vscode-log/src/CustomError.ts:12](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/CustomError.ts#L12)
+[packages/vscode-log/src/CustomError.ts:12](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/CustomError.ts#L12)
 
 ## Properties
 
@@ -58,7 +58,7 @@ node\_modules/.pnpm/typescript@5.3.3/node\_modules/typescript/lib/lib.es2022.err
 
 #### Source
 
-[packages/vscode-log/src/CustomError.ts:9](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/CustomError.ts#L9)
+[packages/vscode-log/src/CustomError.ts:9](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/CustomError.ts#L9)
 
 ***
 
@@ -96,7 +96,7 @@ node\_modules/.pnpm/typescript@5.3.3/node\_modules/typescript/lib/lib.es5.d.ts:1
 
 #### Source
 
-[packages/vscode-log/src/CustomError.ts:10](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/CustomError.ts#L10)
+[packages/vscode-log/src/CustomError.ts:10](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/CustomError.ts#L10)
 
 ***
 
@@ -132,7 +132,7 @@ node\_modules/.pnpm/typescript@5.3.3/node\_modules/typescript/lib/lib.es5.d.ts:1
 
 #### Source
 
-[packages/vscode-log/src/CustomError.ts:8](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/CustomError.ts#L8)
+[packages/vscode-log/src/CustomError.ts:8](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/CustomError.ts#L8)
 
 ***
 
@@ -230,4 +230,4 @@ error code messages object
 
 #### Source
 
-[packages/vscode-log/src/CustomError.ts:33](https://github.com/ygqygq2/npm-packages/blob/b33aad4/packages/vscode-log/src/CustomError.ts#L33)
+[packages/vscode-log/src/CustomError.ts:33](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/CustomError.ts#L33)
