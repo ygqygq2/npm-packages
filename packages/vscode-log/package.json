@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "npm run build -- --watch",
-    "test": "echo test",
+    "test": "vitest --watch=false",
     "docs": "typedoc --options typedoc.json"
   },
   "devDependencies": {

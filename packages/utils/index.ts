@@ -1,1 +1,1 @@
-export * from "./src/encrypt";
+export { encryptPassword } from "./src/encrypt";

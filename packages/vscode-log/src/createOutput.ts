@@ -1,4 +1,3 @@
-import { formatLog } from "./formatLog";
 import { Output } from "./types";
 import { LogOutputChannel } from "vscode";
 

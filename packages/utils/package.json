@@ -1,14 +1,21 @@
 {
   "name": "@ygqygq2/utils",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A collection of utility functions",
+  "main": "index.ts",
+  "keywords": [
+    "utils",
+    "function",
+    "common"
+  ],
+  "author": "ygqygq2 <ygqygq2@qq.com>",
+  "license": "MIT",
+  "repository": "https://github.com/ygqygq2/npm-packages",
+  "bugs": "https://github.com/ygqygq2/npm-packages/issues",
+  "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/utils",
   "scripts": {
-    "build": "tsc"
+    "test": "vitest --watch=false"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.2.0"
   },
