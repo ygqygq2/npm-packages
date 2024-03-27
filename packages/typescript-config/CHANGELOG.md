@@ -1,5 +1,11 @@
 # @ygqygq2/typescript-config
 
+## 0.0.2
+
+### Patch Changes
+
+- edbf5aa: feat: update config
+
 ## 0.0.1
 
 ### Patch Changes
