@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2022",
+    "target": "ESNext",
     "strictNullChecks": true
   },
   "exclude": ["node_modules"]

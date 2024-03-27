@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es6",
+    "target": "ESNext",
     "useUnknownInCatchVariables": false
   },
   "include": ["**/*.ts", "**/*.tsx", "next.d.ts", "next-env.d.ts", ".next/types/**/*.ts"],
