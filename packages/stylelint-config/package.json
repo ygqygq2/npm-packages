@@ -4,11 +4,6 @@
   "repository": "https://github.com/ygqygq2/npm-packages",
   "bugs": "https://github.com/ygqygq2/npm-packages/issues",
   "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/stylelint-config",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "tailwindcss.js"
-  ],
   "dependencies": {},
   "devDependencies": {
     "stylelint": "^16.3.0",

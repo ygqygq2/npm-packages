@@ -9,16 +9,6 @@
   "repository": "https://github.com/ygqygq2/npm-packages",
   "bugs": "https://github.com/ygqygq2/npm-packages/issues",
   "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/eslint-config",
-  "files": [
-    "base.js",
-    "base-ts.js",
-    "eslint-preset.js",
-    "library.js",
-    "nest.js",
-    "next.js",
-    "react-internal.js",
-    "react.js"
-  ],
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.4",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
