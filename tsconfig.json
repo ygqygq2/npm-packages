@@ -1,3 +1,4 @@
 {
-  "extends": "@ygqygq2/typescript-config/base.json"
+  "extends": "@ygqygq2/typescript-config/base.json",
+  "exclude": ["vite.config.ts"]
 }
