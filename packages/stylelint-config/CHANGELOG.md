@@ -1,5 +1,11 @@
 # @ygqygq2/stylelint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- 34904b2: chore: update config
+
 ## 0.0.2
 
 ### Patch Changes
