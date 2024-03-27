@@ -4,6 +4,7 @@
         "nextjs",
         "peaceiris",
         "stylelint",
+        "tailwindcss",
         "Turborepo"
     ]
 }

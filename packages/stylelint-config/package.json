@@ -1,18 +1,22 @@
 {
   "name": "@ygqygq2/stylelint-config",
   "version": "0.0.1",
-  "main": "index.js",
   "repository": "https://github.com/ygqygq2/npm-packages",
   "bugs": "https://github.com/ygqygq2/npm-packages/issues",
   "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/stylelint-config",
-  "dependencies": {
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "tailwindcss.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {
     "stylelint": "^16.3.0",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-recess-order": "^5.0.0",
     "stylelint-config-standard": "^36.0.0",
-    "stylelint-prettier": "^5.0.0"
-  },
-  "devDependencies": {
-    "@ygqygq2/eslint-config": "workspace:*"
+    "stylelint-prettier": "^5.0.0",
+    "@ygqygq2/eslint-config": "workspace:*",
+    "stylelint-config-tailwindcss": "^0.0.7"
   }
 }
