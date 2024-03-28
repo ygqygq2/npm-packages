@@ -95,7 +95,7 @@ module.exports = {
           'unknown',
         ],
         alphabetize: { order: 'asc', caseInsensitive: false },
-        newlinesBetween: 'always-and-inside-groups',
+        'newlines-between': 'always-and-inside-groups',
         warnOnUnassignedImports: true,
         pathGroupsExcludedImportTypes: ['builtin', 'react'],
       },

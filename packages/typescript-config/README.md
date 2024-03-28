@@ -9,3 +9,4 @@ typescript config for some projects
 `nextjs.json`: the config for nextjs project.
 `react-library.json`: the config for react library project, without lib option.
 `react.json`: the config for react library project, with lib option.
+`electron.json`: the config for electron project.
