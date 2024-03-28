@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- 93b484b: chore: update config
+
 ## 0.0.4
 
 ### Patch Changes
