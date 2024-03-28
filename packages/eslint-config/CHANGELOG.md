@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- 382dca8: chore: update README.md
+
 ## 0.0.6
 
 ### Patch Changes
