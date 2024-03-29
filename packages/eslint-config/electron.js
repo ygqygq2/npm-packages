@@ -73,7 +73,7 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: 'src/**/*.{css, scss}',
+            pattern: '**/*.{css, scss, sass, less, module.css}',
             group: 'unknown',
             position: 'after',
           },
