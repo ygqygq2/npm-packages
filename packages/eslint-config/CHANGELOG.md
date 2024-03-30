@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 0.0.9
+
+### Patch Changes
+
+- 04322bd: feat: add vscode config
+
 ## 0.0.8
 
 ### Patch Changes
