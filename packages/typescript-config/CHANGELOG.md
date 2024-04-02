@@ -1,5 +1,11 @@
 # @ygqygq2/typescript-config
 
+## 0.0.5
+
+### Patch Changes
+
+- 67ab70b: chore: update ts config
+
 ## 0.0.4
 
 ### Patch Changes
