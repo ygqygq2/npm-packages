@@ -1,5 +1,11 @@
 # @ygqygq2/stylelint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- 04322bd: feat: add vscode config
+
 ## 0.0.3
 
 ### Patch Changes
