@@ -5,7 +5,8 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "target": "EXNext",
     "module": "ESNext",
-    "target": "es6"
+    "moduleResolution": "node"
   }
 }
