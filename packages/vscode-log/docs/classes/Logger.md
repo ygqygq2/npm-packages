@@ -1,246 +1,297 @@
-**@ygqygq2/vscode-log v0.0.3** • [Readme](../README.md) \| [API](../globals.md)
-
-***
-
-[@ygqygq2/vscode-log v0.0.3](../README.md) / Logger
+[@ygqygq2/vscode-log - v0.0.3](../README.md) / [Exports](../modules.md) / Logger
 
 # Class: Logger
 
 单实例类
 
+## Table of contents
+
+### Constructors
+
+- [constructor](Logger.md#constructor)
+
+### Properties
+
+- [debug](Logger.md#debug)
+- [error](Logger.md#error)
+- [info](Logger.md#info)
+- [trace](Logger.md#trace)
+- [warn](Logger.md#warn)
+- [instance](Logger.md#instance)
+- [output](Logger.md#output)
+
+### Methods
+
+- [handleError](Logger.md#handleerror)
+- [throw](Logger.md#throw)
+- [configure](Logger.md#configure)
+- [createLogFunction](Logger.md#createlogfunction)
+- [getInstance](Logger.md#getinstance)
+
 ## Constructors
 
-### new Logger()
+### constructor
 
-> **`private`** **new Logger**(): [`Logger`](Logger.md)
+• **new Logger**(): [`Logger`](Logger.md)
 
 #### Returns
 
 [`Logger`](Logger.md)
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:12](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L12)
+[packages/vscode-log/src/Logger.ts:12](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L12)
 
 ## Properties
 
-### debug()
+### debug
 
-> **debug**: (...`args`) => `void`
+• **debug**: (...`args`: `any`[]) => `void`
 
-#### Parameters
+#### Type declaration
 
-• ...**args**: `any`[]
+▸ (`...args`): `void`
 
-#### Returns
+##### Parameters
 
-`void`
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
 
-#### Source
-
-[packages/vscode-log/src/Logger.ts:41](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L41)
-
-***
-
-### error()
-
-> **error**: (...`args`) => `void`
-
-#### Parameters
-
-• ...**args**: `any`[]
-
-#### Returns
+##### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:44](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L44)
+[packages/vscode-log/src/Logger.ts:41](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L41)
 
-***
+___
 
-### info()
+### error
 
-> **info**: (...`args`) => `void`
+• **error**: (...`args`: `any`[]) => `void`
 
-#### Parameters
+#### Type declaration
 
-• ...**args**: `any`[]
+▸ (`...args`): `void`
 
-#### Returns
+##### Parameters
 
-`void`
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
 
-#### Source
-
-[packages/vscode-log/src/Logger.ts:42](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L42)
-
-***
-
-### trace()
-
-> **trace**: (...`args`) => `void`
-
-#### Parameters
-
-• ...**args**: `any`[]
-
-#### Returns
+##### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:40](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L40)
+[packages/vscode-log/src/Logger.ts:44](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L44)
 
-***
+___
 
-### warn()
+### info
 
-> **warn**: (...`args`) => `void`
+• **info**: (...`args`: `any`[]) => `void`
 
-#### Parameters
+#### Type declaration
 
-• ...**args**: `any`[]
+▸ (`...args`): `void`
 
-#### Returns
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:43](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L43)
+[packages/vscode-log/src/Logger.ts:42](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L42)
 
-***
+___
+
+### trace
+
+• **trace**: (...`args`: `any`[]) => `void`
+
+#### Type declaration
+
+▸ (`...args`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+[packages/vscode-log/src/Logger.ts:40](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L40)
+
+___
+
+### warn
+
+• **warn**: (...`args`: `any`[]) => `void`
+
+#### Type declaration
+
+▸ (`...args`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+[packages/vscode-log/src/Logger.ts:43](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L43)
+
+___
 
 ### instance
 
-> **`static`** **`private`** **instance**: [`Logger`](Logger.md)
+▪ `Static` `Private` **instance**: [`Logger`](Logger.md)
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:11](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L11)
+[packages/vscode-log/src/Logger.ts:11](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L11)
 
-***
+___
 
 ### output
 
-> **`static`** **output**: [`Output`](../-internal-/type-aliases/Output.md)
+▪ `Static` **output**: [`Output`](../modules/internal_.md#output)
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:10](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L10)
+[packages/vscode-log/src/Logger.ts:10](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L10)
 
 ## Methods
 
-### handleError()
+### handleError
 
-> **handleError**(`error`): `void`
+▸ **handleError**(`error`): `void`
 
 output error
 
 #### Parameters
 
-• **error**: [`CustomError`](CustomError.md)
-
-custom error
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `error` | [`CustomError`](CustomError.md) | custom error |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:59](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L59)
+[packages/vscode-log/src/Logger.ts:59](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L59)
 
-***
+___
 
-### throw()
+### throw
 
-> **throw**(`error`): `void`
+▸ **throw**(`error`): `void`
 
 throw error
 
 #### Parameters
 
-• **error**: [`CustomError`](CustomError.md)
-
-custom error
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `error` | [`CustomError`](CustomError.md) | custom error |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:50](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L50)
+[packages/vscode-log/src/Logger.ts:50](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L50)
 
-***
+___
 
-### configure()
+### configure
 
-> **`static`** **configure**(`window`, `title`): `void`
+▸ **configure**(`window`, `title`): `void`
 
 配置日志输出
 
 #### Parameters
 
-• **window**
-
-vscode.window
-
-• **window\.createOutputChannel**: `Function`
-
-• **title**: `string`
-
-vscode output channel title
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `window` | `Object` | vscode.window |
+| `window.createOutputChannel` | `Function` | - |
+| `title` | `string` | vscode output channel title |
 
 #### Returns
 
 `void`
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:21](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L21)
+[packages/vscode-log/src/Logger.ts:21](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L21)
 
-***
+___
 
-### createLogFunction()
+### createLogFunction
 
-> **`static`** **`private`** **createLogFunction**(`level`): (...`args`) => `void`
+▸ **createLogFunction**(`level`): (...`args`: `any`[]) => `void`
 
 #### Parameters
 
-• **level**: keyof [`Output`](../-internal-/type-aliases/Output.md)
+| Name | Type |
+| :------ | :------ |
+| `level` | keyof [`Output`](../modules/internal_.md#output) |
 
 #### Returns
 
-`Function`
+`fn`
 
-> ##### Parameters
->
-> • ...**args**: `any`[]
->
-> ##### Returns
->
-> `void`
->
+▸ (`...args`): `void`
 
-#### Source
+##### Parameters
 
-[packages/vscode-log/src/Logger.ts:34](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L34)
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
 
-***
+##### Returns
 
-### getInstance()
+`void`
 
-> **`static`** **getInstance**(): [`Logger`](Logger.md)
+#### Defined in
+
+[packages/vscode-log/src/Logger.ts:34](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L34)
+
+___
+
+### getInstance
+
+▸ **getInstance**(): [`Logger`](Logger.md)
 
 #### Returns
 
 [`Logger`](Logger.md)
 
-#### Source
+#### Defined in
 
-[packages/vscode-log/src/Logger.ts:30](https://github.com/ygqygq2/npm-packages/blob/c91f153/packages/vscode-log/src/Logger.ts#L30)
+[packages/vscode-log/src/Logger.ts:30](https://github.com/ygqygq2/npm-packages/blob/f3307567327fc0cddcc8f2d68a7f0b2ba3f8fefc/packages/vscode-log/src/Logger.ts#L30)
