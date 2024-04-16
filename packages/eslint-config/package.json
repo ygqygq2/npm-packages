@@ -1,7 +1,7 @@
 {
   "name": "@ygqygq2/eslint-config",
   "license": "MIT",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
