@@ -1,7 +1,7 @@
 import tseslint from 'typescript-eslint';
-import base from './base';
+import base from './base.mjs';
 
-export default tseslint.config(...base, {
+export default tseslint.config(...base, ...tseslint.configs.recommended, {
   rules: {
     '@typescript-eslint/no-unused-vars': [
       'warn',
