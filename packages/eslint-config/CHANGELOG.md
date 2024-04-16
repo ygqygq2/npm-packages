@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 1.0.0
+
+### Major Changes
+
+- ed2d005: feat: upgrade eslint 9.0 flat config
+
 ## 0.0.10
 
 ### Patch Changes
