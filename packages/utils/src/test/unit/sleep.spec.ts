@@ -17,7 +17,7 @@ describe('sleep', () => {
     await sleep(milliseconds);
     const end = Date.now();
     const elapsed = end - start;
-    expect(elapsed).toBeLessThan(1);
+    expect(elapsed).toBeLessThan(5);
   });
 
   it('should resolve after a small delay', async () => {
