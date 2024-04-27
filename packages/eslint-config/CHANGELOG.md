@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 1.0.1
+
+### Patch Changes
+
+- 210bc5b: chore: update eslint-config
+
 ## 1.0.0
 
 ### Major Changes
