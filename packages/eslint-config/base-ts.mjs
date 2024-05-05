@@ -1,4 +1,5 @@
 import tseslint from 'typescript-eslint';
+
 import base from './base.mjs';
 
 export default tseslint.config(...base, ...tseslint.configs.recommended, {
