@@ -1,5 +1,11 @@
 # @ygqygq2/typescript-config
 
+## 0.0.6
+
+### Patch Changes
+
+- b0eee0e: feat: react.json update
+
 ## 0.0.5
 
 ### Patch Changes
