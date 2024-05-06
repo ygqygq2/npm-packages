@@ -1,6 +1,7 @@
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import tseslint from 'typescript-eslint';
+
 import baseTs from './base-ts.mjs';
 
 export default tseslint.config(...baseTs, {
