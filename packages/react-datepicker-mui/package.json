@@ -21,20 +21,19 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "npm run build -- --watch",
-    "test": "vitest --watch=false",
-    "docs": "typedoc --options typedoc.json"
+    "test": "vitest --watch=false"
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "@mui/system": "^5.15.15",
     "date-fns": "^3.6.0",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-datepicker": "^6.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.2",
     "@types/react-datepicker": "^6.2.0",
-    "@ygqygq2/typescript-config": "^0.0.6"
+    "@ygqygq2/typescript-config": "workspace:^"
   }
 }
