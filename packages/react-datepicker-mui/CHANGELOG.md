@@ -1,5 +1,11 @@
 # @ygqygq2/react-datepicker-mui
 
+## 0.0.2
+
+### Patch Changes
+
+- 80b0100: chore: 去除 FC
+
 ## 0.0.1
 
 ### Patch Changes
