@@ -2,14 +2,13 @@ import type { Theme } from "@mui/material";
 import { useTheme } from "@mui/material";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import { alpha } from "@mui/system/colorManipulator";
-import { FC } from "react";
 import type { ReactDatePickerProps } from "react-datepicker";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 interface DatepickerProps extends ReactDatePickerProps {}
 
-const CustomGlobalStyles: FC<{ theme: Theme }> = (props: { theme: Theme }) => {
+const CustomGlobalStyles = (props: { theme: Theme }) => {
   const { theme } = props;
   if (theme.palette.mode === "dark") {
     return (
@@ -173,7 +172,7 @@ const CustomGlobalStyles: FC<{ theme: Theme }> = (props: { theme: Theme }) => {
   );
 };
 
-export const Datepicker: FC<DatepickerProps> = (props: DatepickerProps) => {
+export const Datepicker = (props: DatepickerProps) => {
   const theme = useTheme();
   return (
     <div className="datepicker">
