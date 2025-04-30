@@ -7,7 +7,7 @@ Eslint config for projects.
 - `base.mjs`: base eslint config for js/ts project.
 - `base-ts.mjs`: base eslint config for ts project, it depends on `base.js`.
 - `nest.mjs`: nest eslint config.
-- `next.mjs`: next eslint config extend with `@vercel/style-guide/eslint/next`.
+- `next.mjs`: next eslint config.
 - `react-vercel.js`: react eslint extends with `@vercel/style-guide/eslint/browser`, `@vercel/style-guide/eslint/typescript`, `@vercel/style-guide/eslint/react`.
 - `react.mjs`: react eslint config.
 - `electron.mjs`: react eslint config.
