@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 1.0.2
+
+### Patch Changes
+
+- a0011f6: chore: update package
+
 ## 1.0.1
 
 ### Patch Changes
