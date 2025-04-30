@@ -1,5 +1,16 @@
 # @ygqygq2/eslint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- 3695b4c: chore: update some package
+- 79d0e5f: chore: update package
+
+### Patch Changes
+
+- 7693b42: chore: update package
+
 ## 1.0.2
 
 ### Patch Changes
