@@ -1,10 +1,12 @@
 import eslint from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 
 export default [
   eslint.configs.recommended,
   eslintPluginPrettierRecommended,
+  eslintConfigPrettier,
   {
     languageOptions: {
       ecmaVersion: 'latest',
