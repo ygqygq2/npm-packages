@@ -1,5 +1,11 @@
 # @ygqygq2/eslint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- c028464: chore: eslintConfigPrettier 导入修改
+
 ## 1.0.2
 
 ### Patch Changes
