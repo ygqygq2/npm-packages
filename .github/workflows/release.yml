@@ -39,19 +39,30 @@ jobs:
 
       - name: Exchange OIDC token for npm registry token
         run: |
-          OIDC_TOKEN=$(curl -fsSL \
+          set -euo pipefail
+          echo "Step 1: Fetching GitHub OIDC token (audience=npm:registry.npmjs.org)..."
+          OIDC_RESPONSE=$(curl -fsSL \
             -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=npm:registry.npmjs.org" | jq -r '.value')
-          NPM_TOKEN=$(curl -fsSL -X POST \
-            -H "Content-Type: application/json" \
-            -d "{\"oidcToken\":\"$OIDC_TOKEN\"}" \
-            "https://registry.npmjs.org/-/v1/login/oidc" | jq -r '.token // empty')
-          if [ -z "$NPM_TOKEN" ]; then
-            echo "OIDC token exchange failed or no token returned, skipping"
-          else
-            echo "::add-mask::$NPM_TOKEN"
-            echo "NODE_AUTH_TOKEN=$NPM_TOKEN" >> $GITHUB_ENV
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=npm:registry.npmjs.org")
+          OIDC_TOKEN=$(echo "$OIDC_RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin)['value'])")
+          if [ -z "$OIDC_TOKEN" ]; then
+            echo "ERROR: GitHub OIDC token is empty"
+            exit 1
           fi
+          echo "Step 2: Exchanging OIDC token with npm registry..."
+          NPM_RESPONSE=$(curl -fsSL -X POST \
+            -H "Content-Type: application/json" \
+            --data-raw "{\"oidcToken\":\"${OIDC_TOKEN}\"}" \
+            "https://registry.npmjs.org/-/v1/login/oidc")
+          echo "npm registry response keys: $(echo "$NPM_RESPONSE" | python3 -c "import sys,json; print(list(json.load(sys.stdin).keys()))")"
+          NPM_TOKEN=$(echo "$NPM_RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin)['token'])")
+          if [ -z "$NPM_TOKEN" ]; then
+            echo "ERROR: npm token is empty after exchange"
+            exit 1
+          fi
+          echo "::add-mask::$NPM_TOKEN"
+          echo "NODE_AUTH_TOKEN=$NPM_TOKEN" >> $GITHUB_ENV
+          echo "NODE_AUTH_TOKEN set successfully"
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
