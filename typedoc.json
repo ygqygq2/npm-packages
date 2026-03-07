@@ -1,5 +1,11 @@
 {
-  "entryPoints": ["packages/*"],
+  "entryPoints": [
+    "packages/eslint-config",
+    "packages/stylelint-config",
+    "packages/typescript-config",
+    "packages/utils",
+    "packages/vscode-log"
+  ],
   "name": "ygqygq2's npm packages",
   "entryPointStrategy": "packages",
   "includeVersion": false,
