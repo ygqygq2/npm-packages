@@ -1,14 +1,16 @@
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 
 import baseTs from './base-ts.mjs';
 
 export default tseslint.config(...baseTs, {
-  files: ['*.js?(x)', '*.ts?(x)', '*.[cm]js'],
+  files: ['**/*.js?(x)', '**/*.ts?(x)', '**/*.[cm]js'],
   plugins: {
     react,
     'react-hooks': reactHooks,
+    'react-refresh': reactRefresh,
   },
   languageOptions: {
     parserOptions: {
@@ -18,10 +20,9 @@ export default tseslint.config(...baseTs, {
     },
     globals: {
       browser: true,
-      node: true,
     },
   },
   rules: {
-    'jsx-a11y/alt-text': 'off',
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
 });
