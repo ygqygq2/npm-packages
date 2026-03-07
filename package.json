@@ -13,7 +13,7 @@
     "docs": "typedoc",
     "docs-all": "npm run docs --workspaces --if-present",
     "docs:script": "ts-node generate-docs.ts",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "publish-packages": "turbo run build lint test && changeset version && node .github/scripts/npm-publish.mjs && changeset tag"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
