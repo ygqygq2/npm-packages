@@ -37,6 +37,22 @@ jobs:
           # 各自生成到各自 docs 目录下
           pnpm run docs-all
 
+      - name: Exchange OIDC token for npm registry token
+        run: |
+          OIDC_TOKEN=$(curl -fsSL \
+            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=npm:registry.npmjs.org" | jq -r '.value')
+          NPM_TOKEN=$(curl -fsSL -X POST \
+            -H "Content-Type: application/json" \
+            -d "{\"oidcToken\":\"$OIDC_TOKEN\"}" \
+            "https://registry.npmjs.org/-/v1/login/oidc" | jq -r '.token // empty')
+          if [ -z "$NPM_TOKEN" ]; then
+            echo "OIDC token exchange failed or no token returned, skipping"
+          else
+            echo "::add-mask::$NPM_TOKEN"
+            echo "NODE_AUTH_TOKEN=$NPM_TOKEN" >> $GITHUB_ENV
+          fi
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
