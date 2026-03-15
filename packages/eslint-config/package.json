@@ -1,8 +1,20 @@
 {
   "name": "@ygqygq2/eslint-config",
   "license": "MIT",
-  "version": "1.1.0",
-  "main": "index.js",
+  "version": "1.1.1",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./base": "./base.mjs",
+    "./base-ts": "./base-ts.mjs",
+    "./react": "./react.mjs",
+    "./electron": "./electron.mjs",
+    "./next": "./next.mjs",
+    "./nest": "./nest.mjs",
+    "./vscode": "./vscode.mjs",
+    "./taro-react": "./taro-react.mjs"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -10,37 +22,39 @@
   "bugs": "https://github.com/ygqygq2/npm-packages/issues",
   "homepage": "https://github.com/ygqygq2/npm-packages/tree/main/packages/eslint-config",
   "dependencies": {
-    "@eslint/js": "^9.27.0",
-    "@typescript-eslint/eslint-plugin": "^8.33.0",
-    "@typescript-eslint/parser": "^8.33.0",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-prettier": "^5.4.0",
+    "@eslint/compat": "^2.0.3",
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.0"
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.3.2",
     "@vercel/style-guide": "^6.0.0",
-    "eslint": "^9.27.0",
+    "eslint": "^10.0.3",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-next": "^15.3.2",
     "eslint-config-turbo": "^2.5.3",
     "eslint-import-resolver-typescript": "^4.4.1",
-    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.11.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-only-warn": "^1.1.0",
     "react": "^19.1.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": "^9.0.0 || ^10.0.0"
   }
 }

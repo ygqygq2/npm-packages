@@ -1,5 +1,12 @@
 # @ygqygq2/eslint-config
 
+## 1.1.1
+
+### Patch Changes
+
+- add `taro-react` flat config based on the official Taro 4 React template rules
+- expose package subpath exports and upgrade the package itself to ESLint 10 era dependencies
+
 ## 1.1.0
 
 ### Minor Changes
